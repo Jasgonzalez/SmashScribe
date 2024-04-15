@@ -1,0 +1,101 @@
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+
+body {
+    background: black;
+
+  
+}
+
+
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Example: 'normal' weight for most browsers */
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+
+
+.logo{
+    height: 50px;
+    width: 50px;
+}
+
+
+nav{
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0;
+
+}
+
+
+.nav-bar ul li{
+    padding-left: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-bar ul li:hover{
+    transform: translateY(-10px);
+}
+
+
+.nav-bar ul li a{
+    text-decoration: none;
+}
+
+
+
+.title {
+    padding-top: 5%;
+    text-align: center;
+    font-size: 60px;
+    background-image: linear-gradient(to right, #F0DDDD, #3D0FF6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.title h1{
+    font-weight: 200;
+}
+
+
+.title-message {
+    text-align: center;
+    padding-top: 5px;
+    background-image: linear-gradient(to right, #F0DDDD, #3D0FF6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.title-message h2{
+    font-weight: 300;
+}
+
+.create-button {
+    padding-top: 4%;
+    text-align: center;
+
+}
+
+.create-button button{
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 300;
+}
