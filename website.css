@@ -98,4 +98,10 @@ nav{
     border-radius: 10px;
     font-size: 15px;
     font-weight: 300;
+    border-color: black;
+    transition-duration: background-color 0.3s;
+}
+
+.create-button button:hover {
+    background-color: blue; /* Darker green */
 }
