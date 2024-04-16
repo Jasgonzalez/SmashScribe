@@ -1,0 +1,79 @@
+* {
+    font-family: "Inter", sans-serif;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Normal weight */
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+body {
+    background: linear-gradient(to left, #070707, #706E6E);
+    height: 100vh;            /* Full viewport height */
+    margin: 0;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    color: white;
+}
+
+.logo1 {
+    position: absolute;  /* Changed from relative */
+    left: 0;            /* Aligns the logo to the right */
+}
+
+nav {
+    font-size: 17px;
+    padding-right: 30px;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    padding-left: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-bar ul li:hover {
+    transform: translateY(-10px);
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+}
+
+.signup-box {
+    display: grid;
+    place-items: center;
+}
+
+.box{
+    height: 70vh;  /* Full viewport height, corrected */
+    margin: 100px;
+    
+    width: 500px;   /* Adjusted width for better visibility */
+    background: black;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.box h1 {
+    font-size: 45px;
+    font-weight: 200;
+    text-align: center;
+    background-image: linear-gradient(to right, #F0DDDD, #3D0FF6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
