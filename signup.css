@@ -11,7 +11,7 @@
 }
 
 body {
-    background: linear-gradient(to left, #070707, #706E6E);
+    background-color: black;
     height: 100vh;            /* Full viewport height */
     margin: 0;
 }
@@ -23,7 +23,7 @@ body {
 }
 
 .logo1 {
-    position: absolute;  /* Changed from relative */
+    position: absolute;  
     left: 0;            /* Aligns the logo to the right */
 }
 
@@ -51,6 +51,8 @@ nav {
 
 .nav-bar ul li a {
     text-decoration: none;
+    color: #7297F4;
+
 }
 
 .signup-box {
@@ -59,21 +61,68 @@ nav {
 }
 
 .box{
-    height: 70vh;  /* Full viewport height, corrected */
+    height: 70vh;  
     margin: 100px;
-    
     width: 500px;   /* Adjusted width for better visibility */
-    background: black;
+    background: rgb(27, 26, 26);
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+
+
 .box h1 {
+    padding-top: 15%;
     font-size: 45px;
     font-weight: 200;
     text-align: center;
-    background-image: linear-gradient(to right, #F0DDDD, #3D0FF6);
+    background-image: linear-gradient(to right, #1B44D4, #EDEDFA);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+}
+
+.inside-box{
+    display: grid;
+    place-items: center;
+    padding-top: 30px;
+}
+
+.box h2{
+    font-weight: 100;
+    background-image: linear-gradient(to left, #1B44D4, #EDEDFA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+input[type="text"]{
+    width: 290px;
+    color: black;
+    background-color: rgb(173, 171, 171);
+    border: none;
+}
+
+
+input[type="password"]{
+    width: 290px;
+    color: black;
+    background-color: rgb(173, 171, 171);
+    border: none;
+}
+
+.inside-box button {
+    align-items: center;
+    margin-top: 10%;
+    border-radius: 40px;
+    width: 30%;
+    height: 50%;
+    background: linear-gradient(to right, #1B44D4, #EDEDFA);
+    
+}
+
+.inside-box button a{
+    font-size: 20px;
+
+    text-decoration: none;
 }
 

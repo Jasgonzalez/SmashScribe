@@ -1,0 +1,99 @@
+* {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    height: 100vh; /* This will cover the full view height of the window */
+    margin: 0; /* Removes default margin */
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #D9CFCF, #0A0A0A); /* Gradient from black to gray */
+  }
+
+  
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Example: 'normal' weight for most browsers */
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+
+/*-------------------------------------Left side bar----------------------------*/
+
+.left-rectangle {
+    position: fixed;
+    display: grid;
+    place-items: left;
+}
+
+.rectangle {
+    height: 100vh;  
+    width: 300px;   
+    background: linear-gradient(to bottom, #EBDBDB, #B3AAAA, #B3AAAA);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------Big middle box----------------------------*/
+
+.middle-box {
+    display: grid;
+    place-items: center;
+    margin-left: 290px;
+
+}
+
+.box{
+    height: 100vh;  
+    margin: 70px;
+    width: 1500px;   /* Adjusted width for better visibility */
+    background: rgb(0, 0, 0);
+    text-align: center;
+    
+}
+
+.search-box {
+    text-align: center;
+    position: relative; /* Allows absolute positioning inside */
+
+}
+
+
+input[type="text"]{
+    padding-left: 4%;
+    margin-top: 4%;
+    width: 1000px;
+    height: 25px;
+    color: black;
+    background-color: rgb(173, 171, 171);
+    border: none;
+    border-radius: 5px;
+    color: blue;
+}
+
+.search-box i{
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    margin-top: 64px;
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+input[type="text"]::placeholder{
+    color: black;
+    font-weight:bold;
+}

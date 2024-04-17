@@ -4,8 +4,6 @@
 
 body {
     background: black;
-
-  
 }
 
 .inter {
@@ -19,7 +17,6 @@ body {
 .logo{
     height:100px;
     width: 100px;
-    color: white;
 }
 
 .logo1 {
@@ -54,6 +51,7 @@ nav{
 
 .nav-bar ul li a{
     text-decoration: none;
+    color: #7297F4;
 }
 
 .title {
@@ -90,16 +88,17 @@ nav{
 }
 
 .create-button button{
-    padding: 5px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 20px;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
     border-color: black;
-    transition-duration: background-color 0.3s;
+    background: linear-gradient(to right, #1B44D4, #EDEDFA);;
+    transition-duration: background 0.3s;
 }
 
 .create-button button:hover {
-    border-color: black;
-    background-color: purple ; 
-    box-shadow: ;
+    background: linear-gradient(to left, #F0DDDD, #3D0FF6) ; 
+    box-shadow: 0, 8, 10;
+    cursor: pointer;
 }
