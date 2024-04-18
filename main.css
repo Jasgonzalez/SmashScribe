@@ -35,9 +35,54 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+/* Media Queries */
+@media (max-width: 1024px) { /* Smaller laptops / large tablets */
+    .rectangle {
+        width: 70%; /* Reduces width to 70% of viewport */
+    }
+}
+
+@media (max-width: 768px) { /* Tablets */
+    .rectangle {
+        width: 85%; /* Further reduces width to 85% of viewport */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile Phones */
+    .rectangle {
+        width: 95%; /* Maximizes width for mobile devices */
+        margin: 50px 0; /* Reduces vertical margin */
+    }
+}
+
+.rectangle h1{
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 40%;
+
+}
+
+.inside-rectangle ul{
+    padding: 0;
+    list-style-type: none;
+    padding-top: 20%;
+
+}
 
 
+.inside-rectangle ul li {
+    padding: 66px;
+    text-align: center
 
+}
+
+
+.inside-rectangle ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
 
 
 
@@ -59,10 +104,31 @@ body {
 .box{
     height: 100vh;  
     margin: 70px;
-    width: 1500px;   /* Adjusted width for better visibility */
+    flex-wrap: wrap;
+    width: 1300px;   /* Adjusted width for better visibility */
     background: rgb(0, 0, 0);
     text-align: center;
     
+}
+
+/* Media Queries */
+@media (max-width: 1024px) { /* Smaller laptops / large tablets */
+    .box {
+        width: 70%; /* Reduces width to 70% of viewport */
+    }
+}
+
+@media (max-width: 768px) { /* Tablets */
+    .box {
+        width: 85%; /* Further reduces width to 85% of viewport */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile Phones */
+    .box {
+        width: 95%; /* Maximizes width for mobile devices */
+        margin: 50px 0; /* Reduces vertical margin */
+    }
 }
 
 .search-box {
@@ -76,7 +142,7 @@ input[type="text"]{
     padding-left: 4%;
     margin-top: 4%;
     width: 1000px;
-    height: 25px;
+    height: 35px;
     color: black;
     background-color: rgb(173, 171, 171);
     border: none;

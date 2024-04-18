@@ -19,12 +19,11 @@ body {
 .logo {
     height: 100px;
     width: 100px;
-    color: white;
 }
 
 .logo1 {
     position: absolute;  
-    left: 0;            /* Aligns the logo to the right */
+    left: 0;            /* Aligns the logo to the left */
 }
 
 nav {
@@ -52,7 +51,6 @@ nav {
 .nav-bar ul li a {
     text-decoration: none;
     color: #7297F4;
-
 }
 
 .signup-box {
@@ -60,15 +58,34 @@ nav {
     place-items: center;
 }
 
-.box{
+.box {
     height: 70vh;  
     margin: 100px;
     width: 500px;   /* Adjusted width for better visibility */
     background: rgb(27, 26, 26);
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: width 0.5s ease; /* Smooth transition for resizing */
 }
 
+/* Media Queries */
+@media (max-width: 1024px) { /* Smaller laptops / large tablets */
+    .box {
+        width: 70%; /* Reduces width to 70% of viewport */
+    }
+}
 
+@media (max-width: 768px) { /* Tablets */
+    .box {
+        width: 85%; /* Further reduces width to 85% of viewport */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile Phones */
+    .box {
+        width: 95%; /* Maximizes width for mobile devices */
+        margin: 50px 0; /* Reduces vertical margin */
+    }
+}
 
 .box h1 {
     padding-top: 15%;
@@ -79,15 +96,16 @@ nav {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    flex-wrap: wrap;
 }
 
-.inside-box{
+.inside-box {
     display: grid;
     place-items: center;
     padding-top: 30px;
 }
 
-.box h2{
+.box h2 {
     font-weight: 100;
     background-image: linear-gradient(to left, #1B44D4, #EDEDFA);
     background-clip: text;
@@ -95,15 +113,7 @@ nav {
     color: transparent;
 }
 
-input[type="text"]{
-    width: 290px;
-    color: black;
-    background-color: rgb(173, 171, 171);
-    border: none;
-}
-
-
-input[type="password"]{
+input[type="text"], input[type="password"] {
     width: 290px;
     color: black;
     background-color: rgb(173, 171, 171);
@@ -117,12 +127,10 @@ input[type="password"]{
     width: 30%;
     height: 50%;
     background: linear-gradient(to right, #1B44D4, #EDEDFA);
-    
 }
 
-.inside-box button a{
+.inside-box button a {
     font-size: 20px;
-
     text-decoration: none;
 }
 
